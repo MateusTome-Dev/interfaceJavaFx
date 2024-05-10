@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="516.0" prefWidth="728.0">
+         <children>
+            <BorderPane prefHeight="505.0" prefWidth="732.0">
+               <top>
+                  <AnchorPane prefHeight="121.0" prefWidth="729.0" style="-fx-background-color: #BD3A3A;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Line endX="97.5" endY="-49.0" layoutX="29.0" layoutY="43.0" startX="-43.00001525878906" startY="74.29289245605469" strokeWidth="4.0" />
+                        <Line endX="97.5" endY="-49.0" layoutX="29.0" layoutY="36.0" startX="-43.00001525878906" startY="74.29289245605469" strokeWidth="4.0">
+                           <effect>
+                              <Shadow />
+                           </effect>
+                        </Line>
+                        <Line endX="97.5" endY="-49.0" layoutX="36.0" layoutY="42.0" startX="-43.00001525878906" startY="74.29289245605469" strokeWidth="4.0">
+                           <effect>
+                              <Shadow />
+                           </effect>
+                        </Line>
+                        <Text layoutX="265.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBoard" wrappingWidth="199.4765625">
+                           <font>
+                              <Font name="System Bold Italic" size="38.0" />
+                           </font>
+                           <fill>
+                              <LinearGradient endX="0.05213270142180093" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color opacity="0.41999998688697815" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="357.0" prefWidth="192.0" style="-fx-background-color: #BD3A3A;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="143.0" fitWidth="200.0" layoutX="50.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/ytLogo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="147.0" fitWidth="140.0" layoutX="52.0" layoutY="173.0">
+                           <image>
+                              <Image url="@../resources/ytPlay.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="76.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YT Music" wrappingWidth="91.4765625">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                           <fill>
+                              <LinearGradient endX="0.05213270142180093" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color opacity="0.41999998688697815" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="383.0" prefWidth="535.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="-1.0" prefHeight="373.0" prefWidth="531.0" style="-fx-background-color: #BD3A3A;">
+                           <children>
+                              <TableView layoutX="306.0" layoutY="1.0" prefHeight="402.0" prefWidth="233.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Musica" />
+                                  <TableColumn prefWidth="75.0" text="Gênero" />
+                                    <TableColumn prefWidth="75.0" text="Autor" />
+                                </columns>
+                              </TableView>
+                              <TextField layoutX="103.0" layoutY="87.0" />
+                              <Label layoutX="103.0" layoutY="61.0" prefHeight="26.0" prefWidth="58.0" text="Musica">
+                                 <font>
+                                    <Font name="System Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="103.0" layoutY="165.0" />
+                              <Label layoutX="103.0" layoutY="139.0" prefHeight="26.0" prefWidth="58.0" text="Gênero">
+                                 <font>
+                                    <Font name="System Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="103.0" layoutY="247.0" />
+                              <Label layoutX="103.0" layoutY="221.0" prefHeight="26.0" prefWidth="58.0" text="Autor">
+                                 <font>
+                                    <Font name="System Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="720.0000610351562" endY="336.0" layoutX="-183.0" layoutY="-336.0" startX="-30.828445434570312" startY="337.0" strokeWidth="2.0" />
+                              <Button layoutX="103.0" layoutY="295.0" mnemonicParsing="false" style="-fx-background-color: #FF3131; -fx-border-color: black; -fx-border-radius: 8px; -fx-background-radius: 8px;" text="Adicionar">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="194.0" layoutY="295.0" mnemonicParsing="false" style="-fx-background-color: #FF3131; -fx-border-color: black; -fx-border-radius: 8px; -fx-background-radius: 8px;" text="Limpar">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Line endX="239.17156982421875" endY="527.0" layoutX="66.0" layoutY="-127.0" startX="239.1715545654297" startY="128.0" strokeWidth="2.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+            <Line endX="239.1715545654297" endY="522.0" startX="239.1715545654297" startY="122.41421508789062" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
